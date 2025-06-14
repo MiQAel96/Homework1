@@ -1,0 +1,12 @@
+plugins {
+    id 'java' //
+}
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile) {
+    sourceCompatibility = JavaVersion.VERSION_23 // версию джава выбираем ту, которую используете
+    targetCompatibility = JavaVersion.VERSION_23
+}
